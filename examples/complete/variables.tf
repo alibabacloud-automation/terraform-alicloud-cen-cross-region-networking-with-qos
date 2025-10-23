@@ -1,7 +1,3 @@
-
-
-
-
 variable "local_vpc_config" {
   description = "The parameters of local vpc resources. The attributes 'vpc', 'vswitches' are required."
   type = list(object({
@@ -23,20 +19,20 @@ variable "local_vpc_config" {
   }))
   default = [{
     vpc = {
-      vpc_name   = "beijing_vpc"
+      vpc_name   = "shanghai_vpc"
       cidr_block = "172.16.0.0/16"
     }
     vswitches = [{
       vswitch_name = "core System"
-      zone_id      = "cn-beijing-j"
+      zone_id      = "cn-shanghai-b"
       cidr_block   = "172.16.10.0/24"
       }, {
       vswitch_name = "Others"
-      zone_id      = "cn-beijing-k"
+      zone_id      = "cn-shanghai-e"
       cidr_block   = "172.16.20.0/24"
       }, {
       vswitch_name = "BigData"
-      zone_id      = "cn-beijing-l"
+      zone_id      = "cn-shanghai-f"
       cidr_block   = "172.16.30.0/24"
     }]
   }]
@@ -63,16 +59,16 @@ variable "remote_vpc_config" {
   }))
   default = [{
     vpc = {
-      vpc_name   = "hangzhou_vpc"
+      vpc_name   = "shenzhen_vpc"
       cidr_block = "192.168.0.0/16"
     }
     vswitches = [{
       vswitch_name = "vsw_j"
-      zone_id      = "cn-hangzhou-j"
+      zone_id      = "cn-shenzhen-e"
       cidr_block   = "192.168.1.0/24"
       }, {
       vswitch_name = "vsw_k"
-      zone_id      = "cn-hangzhou-k"
+      zone_id      = "cn-shenzhen-f"
       cidr_block   = "192.168.2.0/24"
     }]
   }]
