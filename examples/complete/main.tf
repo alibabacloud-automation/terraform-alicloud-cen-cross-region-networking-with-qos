@@ -1,11 +1,11 @@
 provider "alicloud" {
   alias  = "local_region"
-  region = "cn-beijing"
+  region = "cn-shanghai"
 }
 
 provider "alicloud" {
   alias  = "remote_region"
-  region = "cn-hangzhou"
+  region = "cn-shenzhen"
 }
 
 
