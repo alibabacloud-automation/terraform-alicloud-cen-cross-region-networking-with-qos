@@ -118,14 +118,15 @@ module "complete" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.200.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | n/a |
-| <a name="provider_alicloud.local_region"></a> [alicloud.local\_region](#provider\_alicloud.local\_region) | n/a |
-| <a name="provider_alicloud.remote_region"></a> [alicloud.remote\_region](#provider\_alicloud.remote\_region) | n/a |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.200.0 |
+| <a name="provider_alicloud.local_region"></a> [alicloud.local\_region](#provider\_alicloud.local\_region) | >= 1.200.0 |
+| <a name="provider_alicloud.remote_region"></a> [alicloud.remote\_region](#provider\_alicloud.remote\_region) | >= 1.200.0 |
 
 ## Modules
 
@@ -138,33 +139,33 @@ module "complete" {
 
 | Name | Type |
 |------|------|
-| [alicloud_cen_instance.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_instance) | resource |
-| [alicloud_cen_inter_region_traffic_qos_policy.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_inter_region_traffic_qos_policy) | resource |
-| [alicloud_cen_inter_region_traffic_qos_queue.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_inter_region_traffic_qos_queue) | resource |
-| [alicloud_cen_traffic_marking_policy.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_traffic_marking_policy) | resource |
-| [alicloud_cen_transit_router.tr_local](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router) | resource |
-| [alicloud_cen_transit_router.tr_remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router) | resource |
-| [alicloud_cen_transit_router_peer_attachment.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_peer_attachment) | resource |
-| [alicloud_cen_transit_router_route_table_association.tr_local](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
-| [alicloud_cen_transit_router_route_table_association.tr_remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
-| [alicloud_cen_transit_router_route_table_propagation.tr_local](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
-| [alicloud_cen_transit_router_route_table_propagation.tr_remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
-| [alicloud_cen_transit_router_route_tables.tr_local](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
-| [alicloud_cen_transit_router_route_tables.tr_remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
-| [alicloud_regions.remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/data-sources/regions) | data source |
+| [alicloud_cen_instance.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_instance) | resource |
+| [alicloud_cen_inter_region_traffic_qos_policy.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_inter_region_traffic_qos_policy) | resource |
+| [alicloud_cen_inter_region_traffic_qos_queue.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_inter_region_traffic_qos_queue) | resource |
+| [alicloud_cen_traffic_marking_policy.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_traffic_marking_policy) | resource |
+| [alicloud_cen_transit_router.tr_local](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router) | resource |
+| [alicloud_cen_transit_router.tr_remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router) | resource |
+| [alicloud_cen_transit_router_peer_attachment.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_peer_attachment) | resource |
+| [alicloud_cen_transit_router_route_table_association.tr_local](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
+| [alicloud_cen_transit_router_route_table_association.tr_remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
+| [alicloud_cen_transit_router_route_table_propagation.tr_local](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
+| [alicloud_cen_transit_router_route_table_propagation.tr_remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
+| [alicloud_cen_transit_router_route_tables.tr_local](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
+| [alicloud_cen_transit_router_route_tables.tr_remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
+| [alicloud_regions.remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/data-sources/regions) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cen_instance_config"></a> [cen\_instance\_config](#input\_cen\_instance\_config) | The parameters of cen instance. | <pre>object({<br>    cen_instance_name = optional(string, "cen-cross-region")<br>    description       = optional(string, "CEN instance for cross-region connectivity")<br>  })</pre> | `{}` | no |
-| <a name="input_cen_traffic_marking_policys"></a> [cen\_traffic\_marking\_policys](#input\_cen\_traffic\_marking\_policys) | The parameters of cen traffic marking policies. | <pre>list(object({<br>    marking_dscp                = number<br>    priority                    = number<br>    traffic_marking_policy_name = optional(string, null)<br>  }))</pre> | `[]` | no |
-| <a name="input_local_tr_config"></a> [local\_tr\_config](#input\_local\_tr\_config) | The parameters of transit router. | <pre>object({<br>    transit_router_name        = optional(string, "tr-local")<br>    transit_router_description = optional(string, null)<br>  })</pre> | `{}` | no |
-| <a name="input_local_vpc_config"></a> [local\_vpc\_config](#input\_local\_vpc\_config) | The parameters of local vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>list(object({<br>    vpc = object({<br>      cidr_block = string<br>      vpc_name   = optional(string, null)<br>    })<br>    vswitches = list(object({<br>      zone_id      = string<br>      cidr_block   = string<br>      vswitch_name = optional(string, null)<br>    }))<br>    tr_vpc_attachment = optional(object({<br>      transit_router_attachment_name  = optional(string, null)<br>      auto_publish_route_enabled      = optional(bool, true)<br>      route_table_propagation_enabled = optional(bool, true)<br>      route_table_association_enabled = optional(bool, true)<br>    }), {})<br>  }))</pre> | `[]` | no |
-| <a name="input_remote_tr_config"></a> [remote\_tr\_config](#input\_remote\_tr\_config) | The parameters of transit router. | <pre>object({<br>    transit_router_name        = optional(string, "tr-remote")<br>    transit_router_description = optional(string, null)<br>  })</pre> | `{}` | no |
-| <a name="input_remote_vpc_config"></a> [remote\_vpc\_config](#input\_remote\_vpc\_config) | The parameters of remote vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>list(object({<br>    vpc = object({<br>      cidr_block = string<br>      vpc_name   = optional(string, null)<br>    })<br>    vswitches = list(object({<br>      zone_id      = string<br>      cidr_block   = string<br>      vswitch_name = optional(string, null)<br>    }))<br>    tr_vpc_attachment = optional(object({<br>      transit_router_attachment_name  = optional(string, null)<br>      auto_publish_route_enabled      = optional(bool, true)<br>      route_table_propagation_enabled = optional(bool, true)<br>      route_table_association_enabled = optional(bool, true)<br>    }), {})<br>  }))</pre> | `[]` | no |
-| <a name="input_tr_peer_attachment"></a> [tr\_peer\_attachment](#input\_tr\_peer\_attachment) | The parameters of transit router peer attachment. | <pre>object({<br>    transit_router_attachment_name  = optional(string, null)<br>    auto_publish_route_enabled      = optional(bool, true)<br>    route_table_propagation_enabled = optional(bool, true)<br>    route_table_association_enabled = optional(bool, true)<br>    bandwidth_type                  = optional(string, "DataTransfer")<br>    bandwidth                       = optional(number, 100)<br>  })</pre> | `{}` | no |
-| <a name="input_traffic_qos_policy_and_queues"></a> [traffic\_qos\_policy\_and\_queues](#input\_traffic\_qos\_policy\_and\_queues) | The parameters of cen inter region traffic qos policy and queues. | <pre>object({<br>    policy_name        = optional(string, null)<br>    policy_description = optional(string, null)<br>    queues = optional(list(object({<br>      remain_bandwidth_percent = number<br>      dscps                    = list(string)<br>      queue_name               = optional(string, null)<br>      queue_description        = optional(string, null)<br>    })), [])<br>  })</pre> | `{}` | no |
+| <a name="input_cen_instance_config"></a> [cen\_instance\_config](#input\_cen\_instance\_config) | The parameters of cen instance. | <pre>object({<br/>    cen_instance_name = optional(string, "cen-cross-region")<br/>    description       = optional(string, "CEN instance for cross-region connectivity")<br/>  })</pre> | `{}` | no |
+| <a name="input_cen_traffic_marking_policys"></a> [cen\_traffic\_marking\_policys](#input\_cen\_traffic\_marking\_policys) | The parameters of cen traffic marking policies. | <pre>list(object({<br/>    marking_dscp                = number<br/>    priority                    = number<br/>    traffic_marking_policy_name = optional(string, null)<br/>  }))</pre> | `[]` | no |
+| <a name="input_local_tr_config"></a> [local\_tr\_config](#input\_local\_tr\_config) | The parameters of transit router. | <pre>object({<br/>    transit_router_name        = optional(string, "tr-local")<br/>    transit_router_description = optional(string, null)<br/>  })</pre> | `{}` | no |
+| <a name="input_local_vpc_config"></a> [local\_vpc\_config](#input\_local\_vpc\_config) | The parameters of local vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>list(object({<br/>    vpc = object({<br/>      cidr_block = string<br/>      vpc_name   = optional(string, null)<br/>    })<br/>    vswitches = list(object({<br/>      zone_id      = string<br/>      cidr_block   = string<br/>      vswitch_name = optional(string, null)<br/>    }))<br/>    tr_vpc_attachment = optional(object({<br/>      transit_router_attachment_name  = optional(string, null)<br/>      auto_publish_route_enabled      = optional(bool, true)<br/>      route_table_propagation_enabled = optional(bool, true)<br/>      route_table_association_enabled = optional(bool, true)<br/>    }), {})<br/>  }))</pre> | `[]` | no |
+| <a name="input_remote_tr_config"></a> [remote\_tr\_config](#input\_remote\_tr\_config) | The parameters of transit router. | <pre>object({<br/>    transit_router_name        = optional(string, "tr-remote")<br/>    transit_router_description = optional(string, null)<br/>  })</pre> | `{}` | no |
+| <a name="input_remote_vpc_config"></a> [remote\_vpc\_config](#input\_remote\_vpc\_config) | The parameters of remote vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>list(object({<br/>    vpc = object({<br/>      cidr_block = string<br/>      vpc_name   = optional(string, null)<br/>    })<br/>    vswitches = list(object({<br/>      zone_id      = string<br/>      cidr_block   = string<br/>      vswitch_name = optional(string, null)<br/>    }))<br/>    tr_vpc_attachment = optional(object({<br/>      transit_router_attachment_name  = optional(string, null)<br/>      auto_publish_route_enabled      = optional(bool, true)<br/>      route_table_propagation_enabled = optional(bool, true)<br/>      route_table_association_enabled = optional(bool, true)<br/>    }), {})<br/>  }))</pre> | `[]` | no |
+| <a name="input_tr_peer_attachment"></a> [tr\_peer\_attachment](#input\_tr\_peer\_attachment) | The parameters of transit router peer attachment. | <pre>object({<br/>    transit_router_attachment_name  = optional(string, null)<br/>    auto_publish_route_enabled      = optional(bool, true)<br/>    route_table_propagation_enabled = optional(bool, true)<br/>    route_table_association_enabled = optional(bool, true)<br/>    bandwidth_type                  = optional(string, "DataTransfer")<br/>    bandwidth                       = optional(number, 100)<br/>  })</pre> | `{}` | no |
+| <a name="input_traffic_qos_policy_and_queues"></a> [traffic\_qos\_policy\_and\_queues](#input\_traffic\_qos\_policy\_and\_queues) | The parameters of cen inter region traffic qos policy and queues. | <pre>object({<br/>    policy_name        = optional(string, null)<br/>    policy_description = optional(string, null)<br/>    queues = optional(list(object({<br/>      remain_bandwidth_percent = number<br/>      dscps                    = list(string)<br/>      queue_name               = optional(string, null)<br/>      queue_description        = optional(string, null)<br/>    })), [])<br/>  })</pre> | `{}` | no |
 
 ## Outputs
 
