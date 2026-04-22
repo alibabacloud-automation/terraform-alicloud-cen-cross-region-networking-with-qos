@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/alibabacloud-automation/terraform-alicloud-cen-cross-region-networking-with-qos/compare/v1.0.1...v2.0.0) (2026-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* add provider version constraint for aliyun/alicloud
+
+### Features
+
+* add provider version constraint for aliyun/alicloud ([5a115bc](https://github.com/alibabacloud-automation/terraform-alicloud-cen-cross-region-networking-with-qos/commit/5a115bc91d7ecc6ed05ea50ffce197aa9917a9be))
+
 ## [1.0.1](https://github.com/alibabacloud-automation/terraform-alicloud-cen-cross-region-networking-with-qos/compare/v1.0.0...v1.0.1) (2025-11-27)
 
 # 1.1.0 (Unreleased)
