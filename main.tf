@@ -91,6 +91,7 @@ resource "alicloud_cen_transit_router_peer_attachment" "this" {
   auto_publish_route_enabled     = var.tr_peer_attachment.auto_publish_route_enabled
   bandwidth_type                 = var.tr_peer_attachment.bandwidth_type
   bandwidth                      = var.tr_peer_attachment.bandwidth
+  cen_bandwidth_package_id       = var.tr_peer_attachment.cen_bandwidth_package_id
   transit_router_attachment_name = var.tr_peer_attachment.transit_router_attachment_name
 }
 
