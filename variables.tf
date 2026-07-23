@@ -83,6 +83,7 @@ variable "tr_peer_attachment" {
     route_table_association_enabled = optional(bool, true)
     bandwidth_type                  = optional(string, "DataTransfer")
     bandwidth                       = optional(number, 100)
+    cen_bandwidth_package_id        = optional(string, null)
   })
   default = {}
 }
