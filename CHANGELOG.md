@@ -1,3 +1,10 @@
+## [2.1.0](https://github.com/alibabacloud-automation/terraform-alicloud-cen-cross-region-networking-with-qos/compare/v2.0.0...v2.1.0) (2026-07-28)
+
+
+### Features
+
+* **module:** support bandwidth package peer attachments ([aa5535e](https://github.com/alibabacloud-automation/terraform-alicloud-cen-cross-region-networking-with-qos/commit/aa5535e6c9c9fa307b9c8ae9cb1a961e90e612f4))
+
 ## [2.0.0](https://github.com/alibabacloud-automation/terraform-alicloud-cen-cross-region-networking-with-qos/compare/v1.0.1...v2.0.0) (2026-04-22)
 
 
